@@ -1,5 +1,6 @@
 package game;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -7,7 +8,7 @@ import java.util.List;
  */
 public class Game {
 
-        private List<Player> players;
+        private List<Player> players = new ArrayList<>();
         private int round;
         Shaker shaker;
 

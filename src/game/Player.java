@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * permet de créer un joueur et de suivre l'évolution de son score
+ */
 public class Player {
 
     private String lastname;
@@ -33,11 +36,18 @@ public class Player {
 
     //_____Méthodes _____ :
 
+    /**
+     * lancer les dés et mettre à jour le score du joueur.
+     */
     public void play(Shaker shaker){
         shaker.throwDices();
         this.score += shaker.getShakervalue();
     }
 
+
+    /**
+     * Afficher le score du joeur
+     */
     public void displayPlayerScore(){
         System.out.println("score du joeur " + this.score);
     }

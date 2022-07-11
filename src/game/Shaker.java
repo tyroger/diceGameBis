@@ -40,7 +40,7 @@ public class Shaker {
     public void throwDices() {
         for (Dice dice : dicesTable
         ) {
-            dice.throwDice();
+            this.shakerValue += dice.getDiceValue();
         }
     }
 
